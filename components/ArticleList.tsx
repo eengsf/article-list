@@ -3,7 +3,7 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const ArticleList = ({ api }: any) => {
   return (
-    <div className="bg-slate-700 flex flex-wrap justify-center md:pt-24 pt-32 gap-4 px-4">
+    <div className="bg-slate-50 flex flex-wrap justify-center md:pt-24 pt-32 gap-4 px-4">
       {api.articles.map((item: any, i: any) => {
         let ttl = item.title;
         if (ttl?.length > 60) {
