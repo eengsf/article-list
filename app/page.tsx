@@ -7,7 +7,7 @@ export default async function Home() {
     keyword: "q=random",
   });
   return (
-    <div className="bg-slate-50">
+    <div className="bg-slate-100">
       <ArticleCard api={response} />
     </div>
   );

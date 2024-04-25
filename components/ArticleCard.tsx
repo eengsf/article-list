@@ -3,7 +3,7 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const ArticleCard = ({ api }: any) => {
   return (
-    <div className="bg-slate-50 flex flex-wrap justify-center md:pt-24 pt-32 gap-4 px-4">
+    <div className="bg-slate-100 flex flex-wrap justify-center md:pt-24 pt-32 gap-4 px-4">
       {api.articles.map((item: any, i: any) => {
         let desc = item.description;
         let ttl = item.title;
@@ -17,7 +17,7 @@ const ArticleCard = ({ api }: any) => {
         return (
           <div
             key={i}
-            className="card lg:w-80 md:w-72 w-full lg:h-[460px] md:h-[384px] h-1/2 bg-white shadow-xl text-black overflow-hidden">
+            className="card lg:w-80 md:w-72 w-full lg:h-[460px] md:h-[384px] h-1/2 bg-white shadow-xl text-black overflow-hidden hover:scale-[102%]">
             <figure className=" w-full h-1/2 overflow-hidden">
               <img
                 src={item.urlToImage}

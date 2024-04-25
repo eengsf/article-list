@@ -3,7 +3,7 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const ArticleList = ({ api }: any) => {
   return (
-    <div className="bg-slate-50 flex flex-wrap justify-center md:pt-24 pt-32 gap-4 px-4">
+    <div className="bg-slate-100 flex flex-wrap justify-center md:pt-24 pt-32 gap-4 px-4">
       {api.articles.map((item: any, i: any) => {
         let ttl = item.title;
         if (ttl?.length > 60) {
@@ -12,7 +12,7 @@ const ArticleList = ({ api }: any) => {
         return (
           <div
             key={i}
-            className="bg-white text-black w-full md:max-w-sm sm:max-w-xl h-48 shadow-lg border rounded-lg p-5 relative">
+            className="bg-white text-black w-full md:max-w-sm sm:max-w-xl h-48 shadow-lg border rounded-lg p-5 relative hover:scale-[102%]">
             <h2 className="card-title lg:text-xl md:text-xl mb-1">{ttl}</h2>
             <span className="lg:text-lg md:text-sm bg-blue-500 py-1 px-3 rounded-md">
               {item.author}
